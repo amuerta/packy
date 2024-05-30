@@ -1,0 +1,146 @@
+clang task3.c -o task3 -g -O0 -fsanitize=address && ./task3 file.txt
+
+
+	String Original:	`Ми любимо їсти кашу! Так казали козаки на русі, для них той смак був найкращим, він нагадував їх батьківщину, рідну мати, родину.`
+
+
+	codepoint (32) was found -> 21 times
+	codepoint (33) was found -> 1 times
+	codepoint (44) was found -> 4 times
+	codepoint (46) was found -> 1 times
+	codepoint (1052) was found -> 1 times
+	codepoint (1058) was found -> 1 times
+	codepoint (1072) was found -> 14 times
+	codepoint (1073) was found -> 3 times
+	codepoint (1074) was found -> 5 times
+	codepoint (1075) was found -> 1 times
+	codepoint (1076) was found -> 4 times
+	codepoint (1079) was found -> 2 times
+	codepoint (1080) was found -> 10 times
+	codepoint (1081) was found -> 2 times
+	codepoint (1082) was found -> 8 times
+	codepoint (1083) was found -> 3 times
+	codepoint (1084) was found -> 4 times
+	codepoint (1085) was found -> 8 times
+	codepoint (1086) was found -> 4 times
+	codepoint (1088) was found -> 4 times
+	codepoint (1089) was found -> 3 times
+	codepoint (1090) was found -> 4 times
+	codepoint (1091) was found -> 7 times
+	codepoint (1093) was found -> 2 times
+	codepoint (1096) was found -> 1 times
+	codepoint (1097) was found -> 2 times
+	codepoint (1100) was found -> 1 times
+	codepoint (1102) was found -> 1 times
+	codepoint (1103) was found -> 1 times
+	codepoint (1110) was found -> 4 times
+
+
+
++		String information uncompressed:
+|	
+|	Number of UTF-8 characters  : 129
+|	Byte`s taken to store data  : 231
+|	Bit length (bytes * 8)      : 1848
+|	Words in string             : 22
+|	Etropy for the string       : 4.30
+|	Kraft's value (UA+SYM = 38) : inf
+|	Shannons value for UA_UTF8  : 0.39
++
+
+
+	codepoints likehood: 
+		codepoint: 33	probability: 0.007752
+		codepoint: 46	probability: 0.007752
+		codepoint: 1052	probability: 0.007752
+		codepoint: 1058	probability: 0.007752
+		codepoint: 1075	probability: 0.007752
+		codepoint: 1096	probability: 0.007752
+		codepoint: 1100	probability: 0.007752
+		codepoint: 1102	probability: 0.007752
+		codepoint: 1103	probability: 0.007752
+		codepoint: 1079	probability: 0.015504
+		codepoint: 1081	probability: 0.015504
+		codepoint: 1093	probability: 0.015504
+		codepoint: 1097	probability: 0.015504
+		codepoint: 1083	probability: 0.023256
+		codepoint: 1089	probability: 0.023256
+		codepoint: 1073	probability: 0.023256
+		codepoint: 1084	probability: 0.031008
+		codepoint: 1086	probability: 0.031008
+		codepoint: 1088	probability: 0.031008
+		codepoint: 1090	probability: 0.031008
+		codepoint: 44	probability: 0.031008
+		codepoint: 1076	probability: 0.031008
+		codepoint: 1110	probability: 0.031008
+		codepoint: 1074	probability: 0.038760
+		codepoint: 1091	probability: 0.054264
+		codepoint: 1085	probability: 0.062016
+		codepoint: 1082	probability: 0.062016
+		codepoint: 1080	probability: 0.077519
+		codepoint: 1072	probability: 0.108527
+		codepoint: 32	probability: 0.162791
+
+
+	string: 
+
+		[1052]	[1080]	[32]	[1083]	[1102]	[1073]	[1080]	[1084]	[1086]	[32]	
+		[1111]	[1089]	[1090]	[1080]	[32]	[1082]	[1072]	[1096]	[1091]	[33]	
+		[32]	[1058]	[1072]	[1082]	[32]	[1082]	[1072]	[1079]	[1072]	[1083]	
+		[1080]	[32]	[1082]	[1086]	[1079]	[1072]	[1082]	[1080]	[32]	[1085]	
+		[1072]	[32]	[1088]	[1091]	[1089]	[1110]	[44]	[32]	[1076]	[1083]	
+		[1103]	[32]	[1085]	[1080]	[1093]	[32]	[1090]	[1086]	[1081]	[32]	
+		[1089]	[1084]	[1072]	[1082]	[32]	[1073]	[1091]	[1074]	[32]	[1085]	
+		[1072]	[1081]	[1082]	[1088]	[1072]	[1097]	[1080]	[1084]	[44]	[32]	
+		[1074]	[1110]	[1085]	[32]	[1085]	[1072]	[1075]	[1072]	[1076]	[1091]	
+		[1074]	[1072]	[1074]	[32]	[1111]	[1093]	[32]	[1073]	[1072]	[1090]	
+		[1100]	[1082]	[1110]	[1074]	[1097]	[1080]	[1085]	[1091]	[44]	[32]	
+		[1088]	[1110]	[1076]	[1085]	[1091]	[32]	[1084]	[1072]	[1090]	[1080]	
+		[44]	[32]	[1088]	[1086]	[1076]	[1080]	[1085]	[1091]	[46]	
+
+	 Shennon-Fano coding for string: 
+
+		[1001110]	[1101]	[111]	[00010]	[11001111]	[00100]	[1101]	[10000]	[10001]	[111]	
+		[(null)]	[00011]	[10111]	[1101]	[111]	[0111]	[010]	[1001101]	[0011]	[1001000]	
+		[111]	[1001111]	[010]	[0111]	[111]	[0111]	[010]	[100101]	[010]	[00010]	
+		[1101]	[111]	[0111]	[10001]	[100101]	[010]	[0111]	[1101]	[111]	[0110]	
+		[010]	[111]	[10110]	[0011]	[00011]	[11000]	[10100]	[111]	[10101]	[00010]	
+		[1100110]	[111]	[0110]	[1101]	[001011]	[111]	[10111]	[10001]	[001010]	[111]	
+		[00011]	[10000]	[010]	[0111]	[111]	[00100]	[0011]	[0000]	[111]	[0110]	
+		[010]	[001010]	[0111]	[10110]	[010]	[110010]	[1101]	[10000]	[10100]	[111]	
+		[0000]	[11000]	[0110]	[111]	[0110]	[010]	[1001100]	[010]	[10101]	[0011]	
+		[0000]	[010]	[0000]	[111]	[(null)]	[001011]	[111]	[00100]	[010]	[10111]	
+		[11001110]	[0111]	[11000]	[0000]	[110010]	[1101]	[0110]	[0011]	[10100]	[111]	
+		[10110]	[11000]	[10101]	[0110]	[0011]	[111]	[10000]	[010]	[10111]	[1101]	
+		[10100]	[111]	[10110]	[10001]	[10101]	[1101]	[0110]	[0011]	[1001001]	
+
+
+
++		String information COMPRESSED:
+|	
+|	Byte`s taken to store data  : 4456
+|	Bit length (bytes * 8)      : 557
+|	Etropy for the string       : 4.30
+|	Average bits per word       : 4.32
+|	compression effectiveness   : 3.32	(does not count sizeof(tree) )
++
+
+
+	 Shennon-Fano DECODED: 
+
+		[1052]	[1080]	[32]	[1083]	[1102]	[1073]	[1080]	[1084]	[1086]	[32]	
+		[-1]	[1089]	[1090]	[1080]	[32]	[1082]	[1072]	[1096]	[1091]	[33]	
+		[32]	[1058]	[1072]	[1082]	[32]	[1082]	[1072]	[1079]	[1072]	[1083]	
+		[1080]	[32]	[1082]	[1086]	[1079]	[1072]	[1082]	[1080]	[32]	[1085]	
+		[1072]	[32]	[1088]	[1091]	[1089]	[1110]	[44]	[32]	[1076]	[1083]	
+		[1103]	[32]	[1085]	[1080]	[1093]	[32]	[1090]	[1086]	[1081]	[32]	
+		[1089]	[1084]	[1072]	[1082]	[32]	[1073]	[1091]	[1074]	[32]	[1085]	
+		[1072]	[1081]	[1082]	[1088]	[1072]	[1097]	[1080]	[1084]	[44]	[32]	
+		[1074]	[1110]	[1085]	[32]	[1085]	[1072]	[1075]	[1072]	[1076]	[1091]	
+		[1074]	[1072]	[1074]	[32]	[-1]	[1093]	[32]	[1073]	[1072]	[1090]	
+		[1100]	[1082]	[1110]	[1074]	[1097]	[1080]	[1085]	[1091]	[44]	[32]	
+		[1088]	[1110]	[1076]	[1085]	[1091]	[32]	[1084]	[1072]	[1090]	[1080]	
+		[44]	[32]	[1088]	[1086]	[1076]	[1080]	[1085]	[1091]	[46]	
+
+	String After compression and utf8 decoding:
+		`Ми любимо ߿сти кашу! Так казали козаки на русі, для них той смак був найкращим, він нагадував ߿х батьківщину, рідну мати, родину.`
